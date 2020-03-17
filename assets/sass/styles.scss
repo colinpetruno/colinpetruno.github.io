@@ -1,0 +1,14 @@
+@import "variables";
+@import "header";
+@import "hero";
+
+html, body {
+  background-color: $white;
+  color: $font-color;
+  font-family: $paragraph-font-family;
+}
+
+h1,h2,h3 {
+  font-family: $heading-font-family;
+}
+

@@ -1,0 +1,28 @@
+section.hero {
+  $height: 50vh;
+
+  background-color: $gray-light;
+  min-height: 150px;
+  height: $height;
+  max-height: 415px;
+
+  > article {
+    background: url('images/colin_portrait_transparent.png'), $gray-light;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: left 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    max-width: $site-max-width;
+    margin: 0 auto;
+  }
+
+  .content {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 550px;
+    max-width: 400px;
+  }
+}

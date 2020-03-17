@@ -1,0 +1,36 @@
+header.header {
+  background-color: #ffffff;
+  max-height: 50px;
+  min-height: 50px; }
+
+section.hero {
+  background-color: #eaf5f8;
+  min-height: 150px;
+  height: 50vh;
+  max-height: 415px; }
+  section.hero > article {
+    background: url("images/colin_portrait_transparent.png"), #eaf5f8;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: left 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    max-width: 1280px;
+    margin: 0 auto; }
+  section.hero .content {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 550px;
+    max-width: 400px; }
+
+html, body {
+  background-color: #ffffff;
+  color: #5c5f66;
+  font-family: "Muli", "Helvetica Neue", Arial, sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Noto Serif", serif; }
+
+/*# sourceMappingURL=styles.css.map */
