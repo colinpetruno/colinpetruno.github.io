@@ -1,14 +1,22 @@
 @import "variables";
+@import "outline_reset";
+@import "buttons";
 @import "header";
 @import "hero";
+@import "production_rails_blog";
+@import "email_optin";
 
 html, body {
   background-color: $white;
   color: $font-color;
   font-family: $paragraph-font-family;
+  font-size: 12pt;
 }
 
 h1,h2,h3 {
   font-family: $heading-font-family;
 }
 
+h2 {
+  font-size: 1.5rem;
+}

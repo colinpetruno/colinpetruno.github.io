@@ -2,9 +2,9 @@ section.hero {
   $height: 50vh;
 
   background-color: $gray-light;
-  min-height: 150px;
   height: $height;
   max-height: 415px;
+  min-height: 350px;
 
   > article {
     background: url('images/colin_portrait_transparent.png'), $gray-light;

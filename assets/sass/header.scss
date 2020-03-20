@@ -2,6 +2,29 @@ header.header {
   $height: 50px;
 
   background-color: $white;
+  display: flex;
   max-height: $height;
   min-height: $height;
+
+  > article {
+    display: flex;
+    width: 100%;
+    max-width: $site-max-width;
+    margin: 0 auto;
+  }
+
+  ul {
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+  }
+
+  ul > li, ul > li > a {
+    display: flex;
+    max-height: $height;
+    min-height: $height;
+    line-height: $height;
+    vertical-align: middle;
+    justify-content: center;
+  }
 }
