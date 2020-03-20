@@ -48,6 +48,28 @@ section.email-optin {
     }
   }
 
+  > article > section {
+    margin-top: 30px;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    li > a {
+      color: $gray-dark;
+      margin-left: 0;
+      padding-left: 0;
+      font-size: $font-size-small;
+
+      &:hover {
+        color: $gray-dark;
+        text-decoration: underline;
+      }
+    }
+  }
+
   .input-group {
     display: flex;
     margin-top: auto;

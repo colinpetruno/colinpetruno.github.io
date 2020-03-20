@@ -25,7 +25,8 @@
     animation-name: hvr-pop;
     animation-duration: 0.4s;
     animation-timing-function: linear;
-    animation-iteration-count: 1; }
+    animation-iteration-count: 1;
+    text-decoration: none; }
   .button.disabled {
     cursor: not-allowed; }
     .button.disabled:hover {
@@ -289,6 +290,8 @@ section.production-rails-blog {
     border: 1px solid #eaf5f8;
     display: flex;
     margin-bottom: 125px; }
+    .projects .project:last-child {
+      margin-bottom: 0; }
     .projects .project > aside {
       display: flex;
       flex-direction: column;
@@ -326,6 +329,44 @@ section.production-rails-blog {
       max-width: none; }
     .projects .project.purple > aside {
       background: linear-gradient(45deg, #5a00c8 0%, #b675d6 100%); }
+
+.technologies {
+  margin-bottom: 100px;
+  margin-top: 100px; }
+  .technologies > article {
+    margin: 0 auto;
+    max-width: 1280px; }
+    .technologies > article > header {
+      text-align: center;
+      margin-bottom: 50px; }
+  .technologies .tech-list > section > header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 5px; }
+  .technologies .tech-list > section > article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .technologies .tech-list > section > article > div {
+      border: 1px solid #c4e3eb;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      margin: 15px;
+      padding: 20px; }
+
+.contact > header {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 50px; }
+.contact > article {
+  margin: 0 auto;
+  max-width: 1280px; }
+.contact form {
+  margin: 0 auto;
+  max-width: 400px; }
 
 section.email-optin {
   background-color: #eaf5f8;
@@ -369,6 +410,20 @@ section.email-optin {
       display: flex;
       flex-direction: column;
       flex-grow: 1; }
+  section.email-optin > article > section {
+    margin-top: 30px; }
+  section.email-optin ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0; }
+    section.email-optin ul li > a {
+      color: #2c3242;
+      margin-left: 0;
+      padding-left: 0;
+      font-size: 0.8rem; }
+      section.email-optin ul li > a:hover {
+        color: #2c3242;
+        text-decoration: underline; }
   section.email-optin .input-group {
     display: flex;
     margin-top: auto;
