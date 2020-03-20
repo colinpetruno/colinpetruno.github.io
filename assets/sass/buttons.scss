@@ -195,3 +195,54 @@
     }
   }
 }
+
+.button.purple {
+  background: $button-purple-background;
+  border: 1px solid $button-purple-background;
+  color: $button-purple-color;
+
+  &:focus { // define focus before hover
+    border: 1px solid darken($button-purple-background, 15%);
+  }
+
+  &:active {
+    background: darken($button-purple-background, 15%);
+  }
+
+  &.disabled {
+    background: lighten($button-purple-background, 15%);
+    border: 1px solid lighten($button-purple-background, 15%);
+    color: lighten($button-purple-color, 15%);
+  }
+
+  &.outline {
+    background: transparent;
+    border: 1px solid $button-purple-background;
+    color: $button-purple-background;
+
+    &:focus { // define focus before hover
+      border: 1px solid darken($button-purple-background, 15%);
+      color: darken($button-purple-background, 15%);
+    }
+
+    &:hover {
+      background: $button-purple-background;
+      color: $button-purple-color;
+    }
+
+    &:active {
+      background: darken($button-purple-background, 10%);
+    }
+
+    &.disabled {
+      border: 1px solid lighten($button-purple-background, 15%);
+      color: lighten($button-purple-background, 15%);
+
+      &:hover {
+        background: transparent;
+        border: 1px solid lighten($button-purple-background, 15%);
+        color: lighten($button-purple-background, 15%);
+      }
+    }
+  }
+}

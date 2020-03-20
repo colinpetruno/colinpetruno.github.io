@@ -1,0 +1,38 @@
+.services {
+  > article {
+    max-width: $site-max-width;
+    margin: 0 auto;
+
+    > header {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+
+  > article > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 -50px;
+  }
+
+  .service {
+    box-shadow: $box-shadow;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $gray-light;
+    width: calc(50% - 100px);
+    margin: 0 50px;
+    margin-bottom: 50px;
+    padding: 20px 75px;
+
+    h5 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    > section {
+      text-align: center;
+    }
+  }
+}

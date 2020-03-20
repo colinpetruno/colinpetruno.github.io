@@ -21,10 +21,15 @@ header.header {
 
   ul > li, ul > li > a {
     display: flex;
+    color: $gray-dark;
     max-height: $height;
     min-height: $height;
     line-height: $height;
     vertical-align: middle;
     justify-content: center;
+  }
+
+  ul > li {
+    margin-left: 45px;
   }
 }
