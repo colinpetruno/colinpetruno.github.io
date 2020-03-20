@@ -10,19 +10,58 @@
           crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="public/assets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
     <header class="header">
-      <article>
-        <ul>
-          <li><a href="https://blog.colinpetruno.com" />Production Rails</a></li>
-          <li><a href="#services" />Services</a></li>
-          <li><a href="#projects" />Projects</a></li>
-          <li><a href="#technologies" />Technologies</a></li>
-          <li><a href="#contact" />Contact</a></li>
-        </ul>
-      </article>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarNavAltMarkup" 
+                aria-controls="navbarNavAltMarkup" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item" href="https://blog.colinpetruno.com" />
+              Production Rails
+            </a>
+
+            <a class="nav-item" href="#services" />Services</a>
+            <a class="nav-item" href="#projects" />Projects</a>
+            <a class="nav-item" href="#technologies" />Technologies</a>
+            <a class="nav-item" href="#contact" />Contact</a>
+          </div>
+        </div>
+      </nav>
+      <!-- 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li></li>
+            <li><a href="#services" />Services</a></li>
+            <li><a href="#projects" />Projects</a></li>
+            <li><a href="#technologies" />Technologies</a></li>
+            <li><a href="#contact" />Contact</a></li>
+          </ul>
+        </div>
+
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      -->
     </header>
 
     <section class="hero">
@@ -125,7 +164,7 @@
 
           <section>
             <h5>Portunus</h5>
-            DEK and KEK encryption gem for Ruby on Rails. A simple opinaniated
+            DEK and KEK encryption gem for Ruby on Rails. A simple opinionated
             data encryption gem. Get started in under 5 minutes and enjoy the
             benefits of an encrypted database and built in key rotation.
 
@@ -165,7 +204,7 @@
           <section>
             <h5>Aphrodite</h5>
             Bootstrap is extremely customizable but most companies are still 
-            using the default settings. Aphrodite is a application that allows
+            using the default settings. Aphrodite is an application that allows
             designers to edit their bootstrap variables and preview it on their
             live production site without any developers.
 

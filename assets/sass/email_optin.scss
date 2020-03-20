@@ -77,4 +77,24 @@ section.email-optin {
     min-width: 450px;
     width: 100%;
   }
+
+  @media (max-width: 768px) {
+    margin-top: 50px;
+
+    > article {
+      flex-direction: column-reverse;
+    }
+
+    .input-group {
+      min-width: 0;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    ul > li {
+      text-align: center;
+    }
+  }
 }

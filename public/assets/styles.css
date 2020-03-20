@@ -152,26 +152,42 @@ header.header {
   background-color: #ffffff;
   display: flex;
   max-height: 50px;
-  min-height: 50px; }
-  header.header > article {
+  min-height: 50px;
+  list-style: none; }
+  header.header > nav {
+    border-bottom: 1px solid #d7ecf2;
     display: flex;
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto; }
-  header.header ul {
-    display: flex;
-    margin-left: auto;
-    list-style: none; }
-  header.header ul > li, header.header ul > li > a {
-    display: flex;
-    color: #2c3242;
-    max-height: 50px;
-    min-height: 50px;
-    line-height: 50px;
-    vertical-align: middle;
-    justify-content: center; }
-  header.header ul > li {
-    margin-left: 45px; }
+    padding-left: 0;
+    padding-right: 0; }
+    header.header > nav .navbar-nav {
+      margin-left: auto; }
+    header.header > nav .navbar-nav > a.nav-item {
+      color: #2c3242;
+      margin-left: 30px; }
+  @media (max-width: 768px) {
+    header.header nav {
+      background-color: #ffffff;
+      height: 58px; }
+      header.header nav > button {
+        outline: none;
+        outline-style: none;
+        outline: 0;
+        margin-left: auto; }
+        header.header nav > button:active, header.header nav > button:hover, header.header nav > button:focus, header.header nav > button:visited {
+          outline-color: transparent;
+          outline: none;
+          outline-style: none;
+          box-shadow: none; }
+      header.header nav .navbar-nav > a.nav-item {
+        margin-left: 0;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #d7ecf2; }
+    header.header #navbarNavAltMarkup {
+      background-color: #ffffff;
+      width: 100%; } }
 
 section.hero {
   background-color: #eaf5f8;
@@ -194,6 +210,21 @@ section.hero {
     margin-bottom: auto;
     margin-left: 550px;
     max-width: 400px; }
+  @media (max-width: 768px) {
+    section.hero {
+      height: auto; }
+      section.hero > article {
+        background-position: center 150px;
+        background-size: 300px;
+        padding-top: 20px;
+        height: auto; }
+      section.hero .content {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 0;
+        margin-bottom: 350px;
+        text-align: center; } }
 
 section.production-rails-blog {
   margin-top: 150px;
@@ -243,6 +274,23 @@ section.production-rails-blog {
         background-size: contain;
         margin: -50px 0;
         width: 560px; }
+  @media (max-width: 768px) {
+    section.production-rails-blog {
+      margin-bottom: 50px; }
+      section.production-rails-blog .tile {
+        margin-left: 15px;
+        margin-right: 15px;
+        flex-direction: column-reverse; }
+        section.production-rails-blog .tile > div.image {
+          min-height: 100px; }
+          section.production-rails-blog .tile > div.image > div {
+            margin-left: 5px;
+            margin-bottom: -95px; }
+        section.production-rails-blog .tile > aside.content {
+          border-radius: 20px;
+          padding-top: 100px; }
+          section.production-rails-blog .tile > aside.content::after {
+            display: none; } }
 
 .services > article {
   max-width: 1280px;
@@ -250,6 +298,8 @@ section.production-rails-blog {
   .services > article > header {
     margin-bottom: 50px;
     text-align: center; }
+    .services > article > header h4 {
+      font-size: 2.0rem; }
 .services > article > section {
   display: flex;
   flex-direction: row;
@@ -269,6 +319,19 @@ section.production-rails-blog {
     text-align: center; }
   .services .service > section {
     text-align: center; }
+@media (max-width: 768px) {
+  .services > article > section {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+  .services .service {
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 .projects {
   background-color: #eaeef8;
@@ -329,6 +392,23 @@ section.production-rails-blog {
       max-width: none; }
     .projects .project.purple > aside {
       background: linear-gradient(45deg, #5a00c8 0%, #b675d6 100%); }
+  @media (max-width: 768px) {
+    .projects > article > header > h4 {
+      margin-bottom: 50px; }
+    .projects .project {
+      flex-direction: column;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-bottom: 25px;
+      width: calc(100% - 30px); }
+      .projects .project > section {
+        margin-right: 0;
+        text-align: center; }
+      .projects .project.right {
+        flex-direction: column-reverse; }
+        .projects .project.right > section {
+          text-align: center;
+          margin-right: 0; } }
 
 .technologies {
   margin-bottom: 100px;
@@ -339,6 +419,8 @@ section.production-rails-blog {
     .technologies > article > header {
       text-align: center;
       margin-bottom: 50px; }
+      .technologies > article > header h4 {
+        font-size: 2.0rem; }
   .technologies .tech-list > section > header {
     text-align: center;
     margin-top: 50px;
@@ -355,6 +437,10 @@ section.production-rails-blog {
       flex-direction: column;
       margin: 15px;
       padding: 20px; }
+  @media (max-width: 768px) {
+    .technologies {
+      margin-bottom: 50px;
+      margin-top: 50px; } }
 
 .contact > header {
   text-align: center;
@@ -367,6 +453,9 @@ section.production-rails-blog {
 .contact form {
   margin: 0 auto;
   max-width: 400px; }
+@media (max-width: 768px) {
+  .contact {
+    padding: 0 15px; } }
 
 section.email-optin {
   background-color: #eaf5f8;
@@ -430,6 +519,17 @@ section.email-optin {
     margin-bottom: auto;
     min-width: 450px;
     width: 100%; }
+  @media (max-width: 768px) {
+    section.email-optin {
+      margin-top: 50px; }
+      section.email-optin > article {
+        flex-direction: column-reverse; }
+      section.email-optin .input-group {
+        min-width: 0; }
+      section.email-optin form {
+        text-align: center; }
+      section.email-optin ul > li {
+        text-align: center; } }
 
 html, body {
   background-color: #ffffff;
