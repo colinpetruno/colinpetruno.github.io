@@ -585,10 +585,13 @@ section.privacy .document-link {
     max-width: calc(100% - 30px); }
   section.privacy .document-link > a {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    text-align: center; }
     section.privacy .document-link > a aside {
       border-bottom-left-radius: 0;
-      border-top-right-radius: 10px; } }
+      border-top-right-radius: 10px; }
+    section.privacy .document-link > a > section {
+      text-align: center; } }
 
 html, body {
   background-color: #ffffff;
