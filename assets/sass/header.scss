@@ -11,7 +11,6 @@ header.header {
     display: flex;
     width: 100%;
     max-width: $site-max-width;
-    // margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
@@ -28,26 +27,6 @@ header.header {
       margin-right: 15px;
     }
   }
-
-//  ul {
- //   display: flex;
-  //  margin-left: auto;
-    list-style: none;
- // }
-
-//  ul > li, ul > li > a {
- //   display: flex;
-  //  color: $gray-dark;
-//    max-height: $height;
-//    min-height: $height;
-//    line-height: $height;
-//    vertical-align: middle;
-//    justify-content: center;
-//  }
-
- // ul > li {
- //   margin-left: 45px;
- // }
 
   @media (max-width: 768px) {
     nav {
