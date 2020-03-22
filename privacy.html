@@ -1,5 +1,154 @@
-Subprocessors
+<html>
+  <head>
+    <title>Colin Petruno</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700|Noto+Serif:400,700&display=swap" 
+          rel="stylesheet">
 
-Third-Party Subprocessors
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+          crossorigin="anonymous">
 
-CampaignMonitor - Email service provider - newsletter marketing - email, ip address
+    <link rel="stylesheet" type="text/css" href="public/assets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarNavAltMarkup" 
+                aria-controls="navbarNavAltMarkup" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item" href="https://blog.colinpetruno.com" />
+              Production Rails
+            </a>
+
+            <a class="nav-item" href="//www.colinpetruno.com#services" />Services</a>
+            <a class="nav-item" href="//www.colinpetruno.com#projects" />Projects</a>
+            <a class="nav-item" href="//www.colinpetruno.com#technologies" />Technologies</a>
+            <a class="nav-item" href="//www.colinpetruno.com#contact" />Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="privacy">
+      <article>
+        <header>
+          <h2>Privacy & Legal</h2>
+
+          Colinpetruno.com does not implement any personal data collection. 
+          Our privacy policy and subprocessor list for information given to 
+          colinpetruno.com through forms is linked below. Get in touch if you
+          have any questions!
+        </header>
+
+        <div class="document-link">
+          <a href="https://drive.google.com/file/d/1ux_PxqXMMLZrO2OXufyqZh1Ri2gHWP_I/view?usp=sharing" target="_blank">
+            <aside>
+              <ion-icon name="document-text-outline"></ion-icon>
+            </aside>
+
+            <section>
+              <h3>Privacy policy</h3>
+              For how we approach and manage your data.
+            </section>
+          </a>
+        </div>
+
+        <div class="document-link">
+          <a href="https://drive.google.com/file/d/11dcVZurD5cPsGvSxWgWbeq0KLfo4IW3w/view?usp=sharing" target="_blank">
+            <aside>
+              <ion-icon name="people-circle-outline"></ion-icon>
+            </aside>
+
+            <section>
+              <h3>Third party subprocessors</h3>
+              Who your data is shared with to perform our services.
+            </section>
+          </a>
+        </div>
+      </article>
+    </section>
+
+
+
+    <section class="email-optin" style="margin-top: auto;">
+      <article>
+        <section>
+          <ul>
+            <li><a href="https://blog.colinpetruno.com" />Production Rails</a></li>
+            <li><a href="#services" />Services</a></li>
+            <li><a href="#projects" />Projects</a></li>
+            <li><a href="#technologies" />Technologies</a></li>
+            <li><a href="#contact" />Contact</a></li>
+            <li><a href="privacy.html" />Privacy Policy</a></li>
+          </ul>
+        </section>
+
+        <form class="js-cm-form" 
+              id="subForm" 
+              action="https://www.createsend.com/t/subscribeerror?description=" 
+              method="post" 
+              data-id="2BE4EF332AA2E32596E38B640E905619F867686724933D580DFEAE4ED154B873750A8C8EA837C178D0CCEAEA15CA60B97D21A9588E1A75FD869FA7EA984E2626">
+          <div>
+            <h5>Get regular updates</h5>
+
+            Get quarterly updates on the latest production Ruby
+            on Rails tips, tricks and advice.  
+
+            <div class="input-group">
+              <input autocomplete="Email" 
+                     aria-label="Email" 
+                     class="js-cm-email-input qa-input-email form-control" 
+                     id="fieldEmail" 
+                     maxlength="200" 
+                     placeholder="Email"
+                     name="cm-whlujt-whlujt" 
+                     required="" 
+                     type="email" />
+              <div class="input-group-append">
+                <button type="submit" class="button primary">Subscribe</button>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <!-- 
+                <div>
+                  <input aria-required="" 
+                         id="cm-privacy-consent" 
+                         name="cm-privacy-consent" 
+                         required="" 
+                         type="checkbox" />
+                  <label for="cm-privacy-consent">I agree to be emailed</label>
+                </div>
+                -->
+
+                <input id="cm-privacy-consent-hidden" 
+                       name="cm-privacy-consent-hidden" 
+                       type="hidden" 
+                       value="true" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </article>
+    </section>
+
+    <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

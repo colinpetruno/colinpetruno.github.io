@@ -1,0 +1,65 @@
+section.privacy {
+  > article {
+    background-color: $gray-light;
+    border-radius: 20px;
+    border: 1px solid darken($gray-light, 5%);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 50px;
+    text-align: center;
+  }
+
+  header {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .document-link {
+    border: 1px solid $gray-light;
+    border-radius: 10px;
+    background-color: $white;
+    display: flex;
+    margin: 50px 0;
+    text-align: center;
+
+    &:last-child {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    > a {
+      display: flex;
+      color: $gray-dark;
+      text-decoration: none;
+    }
+
+    aside, section {
+      display: flex;
+    }
+
+    aside {
+      background: $salmon-gradient;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      min-width: 125px;
+      min-height: 100px;
+
+      ion-icon {
+        color: $white;
+        display: flex;
+        font-size: 4rem;
+        margin: auto;
+      }
+    }
+
+    section {
+      flex-direction: column;
+      padding: 20px;
+      text-align: left;
+
+      h3 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

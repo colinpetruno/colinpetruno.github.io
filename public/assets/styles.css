@@ -160,7 +160,8 @@ header.header {
     width: 100%;
     max-width: 1280px;
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    margin: 0 auto; }
     header.header > nav .navbar-nav {
       margin-left: auto; }
     header.header > nav .navbar-nav > a.nav-item {
@@ -531,11 +532,59 @@ section.email-optin {
       section.email-optin ul > li {
         text-align: center; } }
 
+section.privacy > article {
+  background-color: #eaf5f8;
+  border-radius: 20px;
+  border: 1px solid #d7ecf2;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 50px;
+  text-align: center; }
+section.privacy header {
+  max-width: 600px;
+  margin: 0 auto; }
+section.privacy .document-link {
+  border: 1px solid #eaf5f8;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  margin: 50px 0;
+  text-align: center; }
+  section.privacy .document-link:last-child {
+    margin-top: 0;
+    margin-bottom: 0; }
+  section.privacy .document-link > a {
+    display: flex;
+    color: #2c3242;
+    text-decoration: none; }
+  section.privacy .document-link aside, section.privacy .document-link section {
+    display: flex; }
+  section.privacy .document-link aside {
+    background: linear-gradient(45deg, #f1766d 0%, #fca37d 100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    min-width: 125px;
+    min-height: 100px; }
+    section.privacy .document-link aside ion-icon {
+      color: #ffffff;
+      display: flex;
+      font-size: 4rem;
+      margin: auto; }
+  section.privacy .document-link section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: left; }
+    section.privacy .document-link section h3 {
+      font-size: 1.3rem; }
+
 html, body {
   background-color: #ffffff;
   color: #5c5f66;
+  display: flex;
+  flex-direction: column;
   font-family: "Muli", "Helvetica Neue", Arial, sans-serif;
-  font-size: 12pt; }
+  font-size: 12pt;
+  min-height: 100%; }
 
 h1, h2, h3 {
   font-family: "Noto Serif", serif; }

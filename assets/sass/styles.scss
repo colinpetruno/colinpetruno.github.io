@@ -9,12 +9,16 @@
 @import "technologies";
 @import "contact";
 @import "email_optin";
+@import "privacy";
 
 html, body {
   background-color: $white;
   color: $font-color;
+  display: flex;
+  flex-direction: column;
   font-family: $paragraph-font-family;
   font-size: 12pt;
+  min-height: 100%;
 }
 
 h1,h2,h3 {
