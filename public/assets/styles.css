@@ -151,8 +151,8 @@
 header.header {
   background-color: #ffffff;
   display: flex;
-  max-height: 50px;
-  min-height: 50px; }
+  max-height: 58px;
+  min-height: 58px; }
   header.header > nav {
     border-bottom: 1px solid #d7ecf2;
     display: flex;
@@ -168,6 +168,10 @@ header.header {
       margin-left: 30px; }
     header.header > nav .navbar-toggler {
       margin-right: 15px; }
+  @media (max-width: 1310px) {
+    header.header {
+      padding-left: 15px;
+      padding-right: 15px; } }
   @media (max-width: 768px) {
     header.header nav {
       background-color: #ffffff;
@@ -206,7 +210,9 @@ section.hero {
     flex-grow: 1;
     height: 100%;
     max-width: 1280px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0 15px;
+    width: calc(100% - 30px); }
   section.hero .content {
     margin-top: auto;
     margin-bottom: auto;
@@ -216,14 +222,18 @@ section.hero {
     section.hero {
       height: auto; }
       section.hero > article {
+        background-color: #eaf5f8;
         background-position: center 150px;
         background-size: 300px;
         padding-top: 20px;
-        height: auto; }
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%; }
       section.hero .content {
-        width: calc(100% - 30px);
-        margin-left: 15px;
-        margin-right: 15px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 0;
         margin-bottom: 350px;
         text-align: center; } }
@@ -236,6 +246,10 @@ section.production-rails-blog {
     flex-direction: column;
     margin: auto;
     max-width: 1280px; }
+  @media (max-width: 1310px) {
+    section.production-rails-blog {
+      padding-left: 15px;
+      padding-right: 15px; } }
   section.production-rails-blog .tile {
     display: flex; }
     section.production-rails-blog .tile > aside.content {
@@ -276,21 +290,29 @@ section.production-rails-blog {
         background-size: contain;
         margin: -50px 0;
         width: 560px; }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     section.production-rails-blog {
       margin-bottom: 50px; }
       section.production-rails-blog .tile {
         margin-left: 15px;
         margin-right: 15px;
-        flex-direction: column-reverse; }
+        flex-direction: column-reverse;
+        text-align: center; }
         section.production-rails-blog .tile > div.image {
           min-height: 100px; }
           section.production-rails-blog .tile > div.image > div {
-            margin-left: 5px;
-            margin-bottom: -95px; }
+            background-size: contain;
+            background-position: center;
+            margin: 0 auto -75px auto;
+            min-height: 200px;
+            width: 560px; }
         section.production-rails-blog .tile > aside.content {
           border-radius: 20px;
           padding-top: 100px; }
+          section.production-rails-blog .tile > aside.content > div {
+            flex-grow: 1;
+            width: 100%;
+            max-width: none; }
           section.production-rails-blog .tile > aside.content::after {
             display: none; } }
 
@@ -303,10 +325,16 @@ section.production-rails-blog {
     .services > article > header h4 {
       font-size: 2.0rem; }
 .services > article > section {
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0 50px; }
+.services .services-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 -50px; }
+  margin-left: -50px;
+  margin-right: -50px; }
 .services .service {
   box-shadow: 0 3px 5px #d7ecf2;
   display: flex;
@@ -351,6 +379,10 @@ section.production-rails-blog {
     .projects > article > header {
       text-align: center;
       margin-bottom: 30px; }
+  @media (max-width: 1310px) {
+    .projects {
+      padding-left: 15px;
+      padding-right: 15px; } }
   .projects .project {
     border: 1px solid #eaf5f8;
     display: flex;
@@ -403,9 +435,17 @@ section.production-rails-blog {
       margin-right: 15px;
       margin-bottom: 25px;
       width: calc(100% - 30px); }
-      .projects .project > section {
+      .projects .project > aside {
+        min-width: 0;
+        width: 100%;
         margin-right: 0;
-        text-align: center; }
+        margin-left: 0; }
+      .projects .project > section {
+        text-align: center;
+        width: 100%;
+        max-width: 550px !important;
+        margin-left: auto;
+        margin-right: auto !important; }
       .projects .project.right {
         flex-direction: column-reverse; }
         .projects .project.right > section {
@@ -482,9 +522,12 @@ section.email-optin {
     margin-left: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    max-width: 400px; }
+    max-width: 450px;
+    position: relative; }
     section.email-optin form .input-group {
       padding-top: 10px; }
+      section.email-optin form .input-group input, section.email-optin form .input-group div.input {
+        display: flex; }
     section.email-optin form input[type=email] {
       outline: none;
       outline-style: none;
@@ -519,17 +562,21 @@ section.email-optin {
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
-    min-width: 450px;
-    width: 100%; }
+    min-width: 300px; }
   @media (max-width: 768px) {
     section.email-optin {
       margin-top: 50px; }
       section.email-optin > article {
+        background-color: #eaf5f8;
         flex-direction: column-reverse; }
-      section.email-optin .input-group {
-        min-width: 0; }
+      section.email-optin form > .input-group {
+        min-width: 0;
+        margin: 0 auto;
+        width: 100% !important; }
       section.email-optin form {
-        text-align: center; }
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto; }
       section.email-optin ul > li {
         text-align: center; } }
 
@@ -557,9 +604,12 @@ section.privacy .document-link {
   section.privacy .document-link > a {
     display: flex;
     color: #2c3242;
-    text-decoration: none; }
+    flex-grow: 1;
+    text-decoration: none;
+    width: 100%; }
   section.privacy .document-link aside, section.privacy .document-link section {
-    display: flex; }
+    display: flex;
+    width: 100%; }
   section.privacy .document-link aside {
     background: linear-gradient(45deg, #f1766d 0%, #fca37d 100%);
     border-top-left-radius: 10px;

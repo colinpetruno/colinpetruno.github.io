@@ -1,5 +1,5 @@
 header.header {
-  $height: 50px;
+  $height: 58px;
 
   background-color: $white;
   display: flex;
@@ -26,6 +26,12 @@ header.header {
     .navbar-toggler {
       margin-right: 15px;
     }
+  }
+
+  @media (max-width: 1310px) {
+    // ensure consistent paddding
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   @media (max-width: 768px) {

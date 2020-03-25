@@ -23,6 +23,14 @@
     }
   }
 
+  @media (max-width: 1310px) {
+    // ensure consistent paddding
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+
   .project {
     border: 1px solid $gray-light;
     display: flex;
@@ -106,9 +114,19 @@
       margin-bottom: 25px;
       width: calc(100% - 30px);
 
-      > section {
+      > aside {
+        min-width: 0;
+        width: 100%;
         margin-right: 0;
+        margin-left: 0;
+      }
+
+      > section {
         text-align: center;
+        width: 100%;
+        max-width: 550px !important;
+        margin-left: auto;
+        margin-right: auto !important;
       }
 
       &.right {

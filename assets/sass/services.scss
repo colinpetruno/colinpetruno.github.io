@@ -14,10 +14,18 @@
   }
 
   > article > section {
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0 50px;
+  }
+
+  .services-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 -50px;
+    margin-left: -50px;
+    margin-right: -50px;
   }
 
   .service {

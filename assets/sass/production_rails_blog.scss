@@ -9,6 +9,12 @@ section.production-rails-blog {
     max-width: $site-max-width;
   }
 
+  @media (max-width: 1310px) {
+    // ensure consistent paddding
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .tile {
     display: flex;
 
@@ -63,25 +69,37 @@ section.production-rails-blog {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     margin-bottom: 50px;
 
     .tile {
       margin-left: 15px;
       margin-right: 15px;
       flex-direction: column-reverse;
+      text-align: center;
+
 
       > div.image {
         min-height: 100px;
+
         > div {
-          margin-left: 5px;
-          margin-bottom: -95px;
+          background-size: contain;
+          background-position: center;
+          margin: 0 auto -75px auto;
+          min-height: 200px;
+          width: 560px;
         }
       }
 
       > aside.content {
         border-radius: 20px;
         padding-top: 100px;
+
+        > div {
+          flex-grow: 1;
+          width: 100%;
+          max-width: none;
+        }
 
         &::after {
           display: none;

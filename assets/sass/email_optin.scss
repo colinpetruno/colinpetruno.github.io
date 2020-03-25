@@ -28,10 +28,15 @@ section.email-optin {
     margin-left: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    max-width: 400px;
+    max-width: 450px;
+    position: relative;
 
     .input-group {
       padding-top: 10px;
+
+      input, div.input {
+        display: flex;
+      }
     }
 
     input[type=email] {
@@ -74,23 +79,27 @@ section.email-optin {
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
-    min-width: 450px;
-    width: 100%;
+    min-width: 300px;
   }
 
   @media (max-width: 768px) {
     margin-top: 50px;
 
     > article {
+      background-color: $gray-light;
       flex-direction: column-reverse;
     }
 
-    .input-group {
+    form > .input-group {
       min-width: 0;
+      margin: 0 auto;
+      width: 100% !important;
     }
 
     form {
       text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     ul > li {

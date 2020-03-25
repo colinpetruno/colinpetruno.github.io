@@ -30,11 +30,14 @@ section.privacy {
     > a {
       display: flex;
       color: $gray-dark;
+      flex-grow: 1;
       text-decoration: none;
+      width: 100%;
     }
 
     aside, section {
       display: flex;
+      width: 100%;
     }
 
     aside {
