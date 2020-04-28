@@ -267,7 +267,7 @@ section.production-rails-blog {
         flex-direction: column;
         flex-grow: 1;
         max-width: 450px; }
-      section.production-rails-blog .tile > aside.content button {
+      section.production-rails-blog .tile > aside.content button, section.production-rails-blog .tile > aside.content a {
         display: inline-block;
         margin-top: auto; }
       section.production-rails-blog .tile > aside.content:after {
